@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.CalculatorFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"/>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:background="#bdbdbd"
+            android:gravity="bottom|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+            <Button
+                android:id="@+id/clearCal"
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="140dp"
+                android:background="@drawable/reg_button_style"
+                android:text="Sıfırla"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/totalCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="Toplam Kalori:"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

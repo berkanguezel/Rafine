@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Anasayfa" />
+        <item
+            android:id="@+id/nav_foodlist"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="Yemek Listesi" />
+        <item
+            android:id="@+id/nav_chooser"
+            android:icon="@drawable/ic_playlist_add_black_24dp"
+            android:title="Yemeğini Seç" />
+        <item
+            android:id="@+id/nav_calculator"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Kalori Hesapla" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="Yemekhane Nerede?" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Paylaş" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Ayarlar" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Çıkış Yap" />
+    </group>
+</menu>

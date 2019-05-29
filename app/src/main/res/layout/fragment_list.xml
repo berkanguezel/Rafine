@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ListFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Pazartesi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/reg_button_style"
+                android:gravity="center"
+                android:text="Mercimek\nÇiftflik Köfte\nSpagetti\nŞamTatlısı"
+                android:textColor="@color/backgroundcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Salı"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/reg_button_style"
+                android:text="Tarhana\nZeytinyağlı Barbunya\nPirinç Pilavı\nYoğurt"
+                android:textColor="@color/backgroundcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Çarşamba"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/reg_button_style"
+                android:text="Ezogelin\nEtli Kış Türlüsü\nMilföy Börek\nTahin Helva"
+                android:textColor="@color/backgroundcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Perşembe"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/reg_button_style"
+                android:text="Domates\nAlabalık Kızartma\nBulgur Pilavı\nCacık"
+                android:textColor="@color/backgroundcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Cuma"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/reg_button_style"
+                android:text="Yayla Çorbası\nIzgara Köfte\nGarnitür\nSalata"
+                android:textColor="@color/backgroundcolor"
+                android:layout_marginBottom="32dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

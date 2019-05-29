@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Fragments.ChooserFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/soupSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:popupBackground="#000"
+            android:spinnerMode="dialog"
+            app:layout_constraintBottom_toTopOf="@+id/maindishSpinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/maindishSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:spinnerMode="dialog"
+            app:layout_constraintBottom_toTopOf="@+id/sidedishSpinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soupSpinner" />
+
+        <Spinner
+            android:id="@+id/sidedishSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:spinnerMode="dialog"
+            app:layout_constraintBottom_toTopOf="@+id/dessertSpinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maindishSpinner" />
+
+        <Spinner
+            android:id="@+id/dessertSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:spinnerMode="dialog"
+            app:layout_constraintBottom_toTopOf="@+id/confirmButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sidedishSpinner" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reg_button_style"
+            android:text="Onayla"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dessertSpinner"
+            tools:layout_editor_absoluteX="138dp" />
+
+        <TextView
+            android:id="@+id/tvSoup"
+            android:layout_width="320dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/soupSpinner"
+            app:layout_constraintEnd_toEndOf="@+id/soupSpinner"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/soupSpinner"
+            app:layout_constraintTop_toTopOf="@+id/soupSpinner" />
+
+        <TextView
+            android:id="@+id/tvMain"
+            android:layout_width="320dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/sidedishSpinner"
+            app:layout_constraintEnd_toEndOf="@+id/maindishSpinner"
+            app:layout_constraintStart_toStartOf="@+id/maindishSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/tvSoup" />
+
+        <TextView
+            android:id="@+id/tvSide"
+            android:layout_width="320dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/dessertSpinner"
+            app:layout_constraintEnd_toEndOf="@+id/sidedishSpinner"
+            app:layout_constraintStart_toStartOf="@+id/sidedishSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/tvMain" />
+
+        <TextView
+            android:id="@+id/tvDessert"
+            android:layout_width="320dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/dessertSpinner"
+            app:layout_constraintEnd_toEndOf="@+id/dessertSpinner"
+            app:layout_constraintStart_toStartOf="@+id/dessertSpinner"
+            app:layout_constraintTop_toTopOf="@+id/dessertSpinner" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>
